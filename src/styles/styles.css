@@ -6,7 +6,17 @@
 
 body {
   margin: 0;
-  background: linear-gradient(to right, #00aaff, #00ff6c);
+  background-color: #00ffe1;
+  background-image: radial-gradient(
+      at 52% 88%,
+      hsla(19, 96%, 69%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 18% 88%, hsla(343, 84%, 68%, 1) 0px, transparent 50%),
+    radial-gradient(at 64% 3%, hsla(285, 91%, 60%, 1) 0px, transparent 50%),
+    radial-gradient(at 70% 56%, hsla(160, 62%, 61%, 1) 0px, transparent 50%),
+    radial-gradient(at 12% 97%, hsla(265, 93%, 64%, 1) 0px, transparent 50%);
+  height: 100vh;
 }
 
 .calculator-grid {
@@ -55,11 +65,3 @@ body {
   color: white;
   font-size: 2.5rem;
 }
-
-
-/* 
-
-I found that when init state and first click ".", an error occurs.
-state.currentOperand?.includes(".") seems to solve this edge case maybe..
-Also, this calculator not support first operand to be negative value right?
-*/

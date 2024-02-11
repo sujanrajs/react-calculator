@@ -1,6 +1,6 @@
-import { ACTIONS } from "./App";
+import ACTIONS from "../utils/constants";
 
-export default function DigitButton({ dispatch, digit }) {
+const DigitButton = ({ dispatch, digit }) => {
   return (
     <button
       onClick={() => dispatch({ type: ACTIONS.ADD_DIGIT, payload: { digit } })}
@@ -8,4 +8,6 @@ export default function DigitButton({ dispatch, digit }) {
       {digit}
     </button>
   );
-}
+};
+
+export default DigitButton;
