@@ -55,3 +55,11 @@ body {
   color: white;
   font-size: 2.5rem;
 }
+
+
+/* 
+
+I found that when init state and first click ".", an error occurs.
+state.currentOperand?.includes(".") seems to solve this edge case maybe..
+Also, this calculator not support first operand to be negative value right?
+*/
